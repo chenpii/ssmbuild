@@ -11,11 +11,11 @@
     <context:component-scan base-package="com.kuang.service"/>
 
     <!--2.将所有业务类注入Spring-->
-    <!-- 方式一：使用注解@Service -->
+    <!-- 方式一：使用注解@Service 报错 -->
     <!-- 方式二：xml配置注入 ，记得关联dao-->
-    <!--<bean id="BookServiceImpl" class="com.kuang.service.BookServiceImpl">-->
-    <!--    <property name="bookMapper" ref="bookMapper"/>-->
-    <!--</bean>-->
+    <bean id="BookServiceImpl" class="com.kuang.service.BookServiceImpl">
+        <property name="bookMapper" ref="bookMapper"/>
+    </bean>
 
     <!--3.声明式事务配置-->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">

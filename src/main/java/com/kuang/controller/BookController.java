@@ -18,7 +18,7 @@ public class BookController {
     @Qualifier("BookServiceImpl")
     private BookService bookService;
 
-    @RequestMapping("/allbook")
+    @RequestMapping("/allBook")
     public String list(Model model) {
         List<Books> booksList = bookService.queryAllBook();
         model.addAttribute("list", booksList);

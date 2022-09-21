@@ -36,7 +36,7 @@
         where bookID = #{bookID};
     </select>
 
-    <select id="queryAllBook" parameterType="int">
+    <select id="queryAllBook" parameterType="int" resultType="books">
         select *
         from books;
     </select>

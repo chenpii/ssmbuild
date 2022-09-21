@@ -6,12 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-@Service
-public class BookServiceImpl implements BookService{
+
+public class BookServiceImpl implements BookService {
 
     //service 调dao层，组合dao
-    @Autowired
     private BookMapper bookMapper;
+
     public void setBookMapper(BookMapper bookMapper) {
         this.bookMapper = bookMapper;
     }
