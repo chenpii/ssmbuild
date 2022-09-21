@@ -15,7 +15,7 @@ import java.util.List;
 public class BookController {
     //组合service层
     @Autowired
-    @Qualifier("BookServiceImpl")
+    @Qualifier("bookServiceImpl")
     private BookService bookService;
 
     @RequestMapping("/allBook")
