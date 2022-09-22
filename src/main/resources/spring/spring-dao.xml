@@ -51,4 +51,6 @@
         <!-- 给出需要扫描Dao接口包 -->
         <property name="basePackage" value="com.kuang.dao"/>
     </bean>
+
+
 </beans>

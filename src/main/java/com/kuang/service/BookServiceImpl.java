@@ -13,10 +13,9 @@ public class BookServiceImpl implements BookService {
     //service 调dao层，组合dao
     @Autowired
     private BookMapper bookMapper;
-
-    // public void setBookMapper(BookMapper bookMapper) {
-    //     this.bookMapper = bookMapper;
-    // }
+    public void setBookMapper(BookMapper bookMapper) {
+        this.bookMapper = bookMapper;
+    }
 
     @Override
     public int addBook(Books books) {
