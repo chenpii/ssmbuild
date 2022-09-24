@@ -8,8 +8,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Books {
-    private int bookID;
+    private Integer bookID;
     private String bookName;
-    private int bookCounts;
+    private Integer bookCounts;
     private String detail;
 }
